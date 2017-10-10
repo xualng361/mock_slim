@@ -1,0 +1,53 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {
+}
+
+a {
+}
+
+.navbar-nav.long-top-bar {
+    position: relative;
+}
+.navbar-nav.long-top-bar.loaded {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navbar-nav.long-top-bar:hover {
+    overflow: visible;
+    white-space: normal;
+    background: #fff;
+}
+
+.navbar-nav.long-top-bar .more {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #999;
+    text-align: right;
+    background: -moz-linear-gradient(left, transparent, #fff);
+    background: -webkit-linear-gradient(left, transparent, #fff);
+    z-index: 10;
+}
+.navbar-nav.long-top-bar:hover .more {
+    display: none;
+}
+.navbar.horizontal-menu .navbar-inner .navbar-nav.long-top-bar a > i {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav.long-top-bar>li {
+        display: inline-block;
+        float: none;
+    }
+}
